@@ -1,0 +1,29 @@
+.btn{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-bottom: 10px;
+
+}
+.btn_red{
+    background-color: red;
+    
+}
+.btn_blue{
+    background-color: blue;
+}
+.clickme{
+    height: 50px;
+    width: 100px;
+}
+.btn_wide{
+    width: 200px
+}
+.btn_small{
+    width: 50px
+}
+#btnId{
+    height: 50px;
+    width: 100px;
+    right: 0;
+}

@@ -1,0 +1,13 @@
+.form{
+    border-color: red;
+    border-width: 2px;
+    border-style: dotted;
+    padding: 4px;
+    width: 100;
+    height: 40;
+    position: relative;
+}
+.form::before {
+    content: ".......";
+    color: black
+}

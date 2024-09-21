@@ -1,0 +1,15 @@
+.shiftPos{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.buttonText{
+    align-items: flex-end;
+}
+.leftText{
+    justify-content: flex-start;
+}
+/* {height: '100px',width: '100px',backgroundColor: `${color}`,} */
