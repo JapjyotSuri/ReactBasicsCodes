@@ -20,6 +20,11 @@ import Todo from './Components/Todo';
 import HideContent from './Components/HideContent';
 import Home from './Home.tsx';
 import Debouncing from './Components/Debouncing.jsx';
+import Throttling from './Components/Throttling.jsx';
+import Grids from './Components/Grids.jsx';
+import MemoHook from './Components/MemoHook.jsx';
+import CallbackHook from './Components/CallbackHook.jsx';
+import AllHeros from './Components/ErrorBoundariesAll/AllHeros.jsx';
 
 function App() {
   const dates=['2020-04-30','2021-04-30','2020-11-04']
@@ -69,6 +74,20 @@ function App() {
       <button onClick={() => { setObj((obj) => {return {...obj,...obj2}})}}>Click here to update</button>
 
       <Debouncing/>
+      <Throttling></Throttling>
+      <div style={{marginTop: '20px'}}>
+        <Grids></Grids>
+      </div>
+
+      <div style={{marginTop: '20px'}}>
+        <MemoHook/>
+      </div>
+      <div style={{marginTop: '20px'}}>
+        <CallbackHook/>
+      </div>
+      <div style={{marginTop: '20px'}}>
+        <AllHeros/>
+      </div>
     </div>
   );
 }

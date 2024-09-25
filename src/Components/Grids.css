@@ -1,0 +1,41 @@
+.item{
+   background-color: red; 
+   
+   margin: 2px;
+}
+.container{
+    display: grid;
+    border-width: 2px;
+    border-color: black;
+    grid-template-rows: repeat(7,100px);
+    /* In the below code we have used fractional unit which divides the page in ratio of wjat in written infront of it and minmax function gives a min and max value for the width of that column */
+    grid-template-columns: 1fr 2fr 1fr minmax(100px,3fr) 1fr 1fr 1fr;
+
+    /* in the above if we write grid-template-columns: repeat(auto-fit,minmax(100px,1fr) it will make the number of colunms dynamic meaning with the change in the size of the grid the no of columns will also change so that content doesnt move out of thr grid */
+    
+    /* grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+    In the above we have made a grid containing 7 rows and 7 colunms each of 100 px size */
+
+    /* em is a relative unit of measurement in CSS that is based on the font size of the element's parent. */
+}
+.item1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* In the above 7 and 3 are not included */
+}
+.item2{
+    grid-row: span 2;
+    grid-column: span 2;
+    /* start first and then end */
+    /* here writing span makes it go 2 from the current location where we are */
+
+}
+.item3{
+    grid-area: 1/1/3/3;
+    /* row-start/col-start/row-end/col-end */
+    background-color: blue;
+    /* Overlapping occurs when we give the same grid location(same start and end points) to 2 different items in the grid */
+}

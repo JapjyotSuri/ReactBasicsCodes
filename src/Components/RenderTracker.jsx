@@ -6,7 +6,8 @@ const RenderTracker = () => {
         countRef.current=countRef.current+1;
 
     })
-    const [count,setCount]=useState(0)
+    const [count,
+      setCount]=useState(0)
     function handleReset(){
         countRef.current=0;
     }
