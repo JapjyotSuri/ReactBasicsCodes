@@ -25,6 +25,16 @@ import Grids from './Components/Grids.jsx';
 import MemoHook from './Components/MemoHook.jsx';
 import CallbackHook from './Components/CallbackHook.jsx';
 import AllHeros from './Components/ErrorBoundariesAll/AllHeros.jsx';
+import AxiosInterceptor from './Components/AxiosInterceptor.jsx';
+import UnnecessaryFunctionRemove from './Components/UnnecessaryFunctionRemove.jsx';
+import ProgressBar from './Components/ProgressBar.jsx';
+import DragDrop from './Components/DragDropAll/DragDrop.tsx';
+import CounterTimer from './Components/CounterTimer.tsx';
+import ScrollToDiv from './Components/ScrollToDiv.tsx';
+import TimerCountButton from './Components/TimerCountButton.tsx';
+import UseTransitionHook from './Components/UseTransitionHook.tsx';
+import UseLayoutEffectPrac from './Components/UseLayoutEffectPrac.tsx';
+import InputPrac from './Components/InputPrac.tsx';
 
 function App() {
   const dates=['2020-04-30','2021-04-30','2020-11-04']
@@ -87,6 +97,37 @@ function App() {
       </div>
       <div style={{marginTop: '20px'}}>
         <AllHeros/>
+      </div>
+      <div style={{marginTop: '20px'}}>
+        <AxiosInterceptor/>
+      </div>
+      <div style={{marginTop: '20px'}}>
+        <UnnecessaryFunctionRemove/>
+      </div>
+      <div style={{marginTop: '20px'}}>
+        <ProgressBar/>
+      </div>
+      <div style={{marginTop: '20px'}}>
+        <DragDrop/>
+      </div>
+      <div style={{marginTop: '20px'}}>
+        <CounterTimer/>
+      </div>
+      <div style={{marginTop: '20px'}}>
+        <ScrollToDiv/>
+      </div>
+      <div style={{marginTop: '20px'}}>
+        <TimerCountButton/>
+      </div>
+      <div style={{marginTop: '20px'}}>
+        <UseTransitionHook/>
+      </div>
+      <div style={{marginTop: '20px',marginBottom: '50px'}}>
+        <UseLayoutEffectPrac/>
+      </div>
+
+      <div style={{marginTop: '20px',marginBottom: '50px'}}>
+        <InputPrac/>
       </div>
     </div>
   );

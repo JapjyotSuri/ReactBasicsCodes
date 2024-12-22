@@ -6,7 +6,7 @@ const ReducerPrac = () => {
         task: 1,
     }
     function reducer(state,action){
-       if(action.type=='val'){
+       if(action.type==='val'){
         return   {...state,value: state.value+action.payload}
        }
        return state

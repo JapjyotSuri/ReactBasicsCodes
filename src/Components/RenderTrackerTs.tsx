@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-const RenderTracker = () => {
-    const countRef=useRef(0)
+const RenderTrackerTs = () => {
+    const countRef=useRef<number>(0)
     useEffect(() => {
         countRef.current=countRef.current+1;
 
@@ -11,6 +11,7 @@ const RenderTracker = () => {
         countRef.current=0;
     }
   return (
+    
     <div>
       <h1>Rendered : {countRef.current}</h1>
       <button onClick={() => setCount((prev) => prev+1)}>Render</button>
@@ -19,4 +20,4 @@ const RenderTracker = () => {
   )
 }
 
-export default RenderTracker
+export default RenderTrackerTs
